@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./2.1.css">
+
+</head>
+<body>
+    <div class="todo-container" id="toDoContainerMain">
+        <h1 class="todo-title">To Do List</h1>
+        <div class="todo-controls">
+            <input type="text" id="taskInput" class="todo-search" placeholder="Search...">
+            <select class="todo-dropdown">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="pending">Pending</option>
+            </select>
+            <button class="todo-darkmode">Dark Mode</button>
+        </div>
+        <ul id="taskList">
+        </ul>
+        <button id="addTaskButton" class="todo-add">+</button>
+    </div>
+  <div class="edit-note-popup" id="editPopUp">
+    <div class="edit-top-container">
+    <input type="text" id="editTaskInput" placeholder="Edit your task..." class="hey">  
+    <button class="close-x-for-edits" id="editPopupCloseBtn" type="submit">X</button>
+    </div>    
+      
+<div class="save-button-container"><button id="saveEditButton" class="save-button-for-edits">Save</button></div>
+  </div>
+
+
+
+
+  <div class="delete-note-popup" id="deletePopUpContainer">
+    <p class="new-note-popup-title">Deleting The Note<button class="close-x" id="deletePopupCloseBtn" type="submit">X</button></p>
+    <p>Are you sure you want to delete this task?</p>
+    <div class="delete-popup-button-container">
+      <button id="cancelDeleteButton">No</button>
+      <button id="confirmDeleteButton">Yes</button>
+      
+
+    </div>
+  </div>
+
+
+    <div class="new-note-popup" id="popupForm">
+      <p class="new-note-popup-title">New Note</p>
+      <input type="text" id="noteInput" placeholder="Add your note...">
+      <div class="new-note-popup-button-container">
+        <button id="cancelButton">Cancel</button>
+        <button id="applyButton">Apply</button>
+
+      </div>
+    </div>
+
+
+    <script src="./3.1.js"></script>
+</body>
+</html>
+
+
+
+
